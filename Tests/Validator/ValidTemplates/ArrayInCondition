@@ -1,0 +1,7 @@
+
+[[[GenerateArray]]]
+Hello there will be array:
+!!!Peoples!!!
+    hello world from {{{Peoples.Name}}}
+!!!/Peoples!!!
+[[[/GenerateArray]]]

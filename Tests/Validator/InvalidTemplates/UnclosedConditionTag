@@ -1,0 +1,17 @@
+[[[AskNumber]]]
+Number is {{{Number}}}
+[[[/AskNumber]]]
+
+!!!Node!!!
+
+Node is {{{Node.Name}}}
+
+[[[NodeId]]] -- unclosed
+{{{Node.Id}}}
+
+SubNodes: 
+    !!!Node.Subnode!!!
+    {{{Node.Subnode.Name}}}
+    !!!/Node.Subnode!!!
+
+!!!/Node!!!

@@ -1,0 +1,14 @@
+Hello there will be array:
+[[[Peoples]]]
+hello world
+[[[/Peoples]]]
+
+Hello there will be same array:
+[[[Peoples]]]
+hello people
+[[[/Peoples]]]
+
+Hello there will be diffrent array:
+[[[Humans]]]
+hello human
+[[[/Humans]]]

@@ -1,0 +1,20 @@
+[[[AskNumber]]]
+Number is {{{Number}}}
+[[[/AskNumber]]]
+
+!!!DuplicatedClosingArray!!!
+
+Node is {{{Node.Name}}}
+
+[[[NodeId]]]
+{{{Node.Id}}}
+[[[/NodeId]]]
+
+SubNodes: 
+    !!!Node.Subnode!!!
+    {{{Node.Subnode.Name}}}
+    !!!/Node.Subnode!!!
+
+!!!/Node!!!
+!!!/Node!!! --duplicate
+
