@@ -1,0 +1,12 @@
+Name: Default
+Prompts:
+  DefaultCondition: Enable default?
+  DefaultPlaceholder: What is default placeholder?
+DefaultValues:
+  DefaultCondition: Yes
+  DefaultPlaceholder: Default
+ExcludeFiles:
+  - template.yaml
+ExcludeDirectories:
+  - .git
+  - .DS_Store
