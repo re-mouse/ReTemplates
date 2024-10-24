@@ -16,7 +16,7 @@ public class IOModule : Module
         
         typeBinder.AddSingleton<ArtifactWriter>();
         
-        typeBinder.AddSingleton<DirectoryManager>();
+        typeBinder.AddSingleton<DirectoryManager>(); 
     }
 
     public override void BindModuleDependencies(ModuleManager moduleBinder)

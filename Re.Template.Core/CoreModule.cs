@@ -9,6 +9,8 @@ public class CoreModule : Module
     public override void BindDependencies(TypeManager typeBinder)
     {
         typeBinder.AddSingleton<TemplateTextFormatter>();
+        typeBinder.AddSingleton<TemplateFileFormatter>();
+        typeBinder.AddSingleton<TemplateDirectoryFormatter>();
         typeBinder.AddSingleton<TemplateMetadataFactory>();
         typeBinder.AddSingleton<TemplateValidator>();
         typeBinder.AddSingleton<ArtifactFactory>();
