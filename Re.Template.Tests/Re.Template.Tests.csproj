@@ -1,0 +1,189 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+
+        <IsPackable>false</IsPackable>
+        <IsTestProject>true</IsTestProject>
+        <RootNamespace>Tests</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.0"/>
+        <PackageReference Include="NUnit" Version="3.13.3"/>
+        <PackageReference Include="NUnit3TestAdapter" Version="4.2.1"/>
+        <PackageReference Include="NUnit.Analyzers" Version="3.6.1"/>
+        <PackageReference Include="coverlet.collector" Version="6.0.0"/>
+        <PackageReference Include="ReDI" Version="1.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Re.Template.Core\Re.Template.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="ValidTemplates\NoTags">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="ValidTemplates\Array">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="ValidTemplates\ArrayWithNestedSubArrays">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="ValidTemplates\ArrayWithNestedSubArraysAndPlaceholder">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="ValidTemplates\ArrayWithPlaceholder">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="ValidTemplates\ArrayWithPlaceholderAndSubArray">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="ValidTemplates\ArrayWithSubArray">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="ValidTemplates\Conditions">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="ValidTemplates\ConditionsInArray">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="ValidTemplates\ConditionsWithPlaceholders">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="ValidTemplates\Empty">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="ValidTemplates\GlobalConditionsWithConditionsInArray">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="ValidTemplates\MultipleArrays">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="ValidTemplates\MultiplePlaceholders">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="ValidTemplates\Placeholder">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="ValidTemplates\ConditionsInArrayInCondition">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="ValidTemplates\ArrayInCondition">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Validator\ValidTemplates\Array">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Validator\ValidTemplates\ArrayInCondition">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Validator\ValidTemplates\ArrayWithNestedSubArrays">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Validator\ValidTemplates\ArrayWithNestedSubArraysAndPlaceholder">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Validator\ValidTemplates\ArrayWithPlaceholder">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Validator\ValidTemplates\ArrayWithPlaceholderAndSubArray">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Validator\ValidTemplates\ArrayWithSubArray">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Validator\ValidTemplates\Conditions">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Validator\ValidTemplates\ConditionsInArray">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Validator\ValidTemplates\ConditionsInArrayInCondition">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Validator\ValidTemplates\ConditionsWithPlaceholders">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Validator\ValidTemplates\Empty">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Validator\ValidTemplates\GlobalConditionsWithConditionsInArray">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Validator\ValidTemplates\MultipleArrays">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Validator\ValidTemplates\MultiplePlaceholders">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Validator\ValidTemplates\NoTags">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Validator\ValidTemplates\Placeholder">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Validator\InvalidTemplates\ArrayOpenedInConditionAndClosedOutside">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Validator\InvalidTemplates\ArrayPlaceholderAfterArray">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Validator\InvalidTemplates\ArrayPlaceholderBeforeArray">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Validator\InvalidTemplates\ClosingPlaceholder">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Validator\InvalidTemplates\ConditionOpenedInArrayAndClosedOutside">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Validator\InvalidTemplates\DuplicationClosingArray">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Validator\InvalidTemplates\DuplicationClosingCondition">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Validator\InvalidTemplates\DuplicationClosingSubArray">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Validator\InvalidTemplates\DuplicationOpeningArray">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Validator\InvalidTemplates\DuplicationOpeningCondition">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Validator\InvalidTemplates\DuplicationOpeningSubArray">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Validator\InvalidTemplates\SubArrayOutsideOfArray">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Validator\InvalidTemplates\UnclosedArrayTag">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Validator\InvalidTemplates\UnclosedConditionInArray">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Validator\InvalidTemplates\UnclosedConditionTag">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Validator\InvalidTemplates\UnclosedSubArrayTag">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="TemplateReader\TemplateExample\template.yaml">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="ArtifactWriter\" />
+      <Folder Include="TemplateFormatter\DefaultTestCorrectResult\" />
+      <Folder Include="TemplateFormatter\DefaultTest\" />
+      <Folder Include="Validator\ValidTemplatesExpected\" />
+    </ItemGroup>
+
+</Project>
