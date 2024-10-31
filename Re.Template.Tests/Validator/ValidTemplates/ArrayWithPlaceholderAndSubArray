@@ -1,8 +1,0 @@
-Hello there will be array:
-!!!Peoples!!!
-    typed peoples age in current century is: {{{Peoples.Age}}}
-    !!!Peoples.Humans!!!
-        hello human from people
-        honestly this tab is optional
-    !!!/Peoples.Humans!!!
-!!!/Peoples!!!

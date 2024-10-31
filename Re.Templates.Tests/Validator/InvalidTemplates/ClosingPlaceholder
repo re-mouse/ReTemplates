@@ -1,0 +1,21 @@
+[[[AskNumber]]]
+Number is {{{Number}}}
+[[[@AskNumber]]]
+
+{{{@InvalidPlaceholder}}} - invalid
+
+!!!Node!!!
+
+Node is {{{Node.Name}}}
+
+[[[NodeId]]]
+{{{Node.Id}}}
+[[[@NodeId]]]
+
+SubNodes: 
+    !!!Node.Subnode!!!
+    {{{Node.Subnode.Name}}}
+    !!!@Node.Subnode!!!
+
+!!!@Node!!!
+

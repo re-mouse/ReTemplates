@@ -1,0 +1,19 @@
+[[[AskNumber]]]
+Number is {{{Number}}}
+[[[@AskNumber]]]
+
+!!!Node!!!
+
+Node is {{{Node.Name}}}
+
+[[[NodeId]]]
+{{{Node.Id}}}
+[[[@NodeId]]]
+
+SubNodes: 
+
+!!!@Node!!!
+
+!!!Node.Subnode!!! -- outside of array
+{{{Node.Subnode.Name}}}
+!!!@Node.Subnode!!!

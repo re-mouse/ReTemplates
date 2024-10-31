@@ -1,0 +1,5 @@
+Hello there will be array:
+!!!Peoples!!!
+    hello world from {{{Peoples.Name}}}
+    [[[Peoples.Dead]]]I'm sorry, he is dead[[[@Peoples.Dead]]]
+!!!@Peoples!!!
